@@ -2,46 +2,148 @@
 <html>
     <!-- phần đầu -->
     <head>
-        <title>xuan vinh</title>
+        <title>hello world</title>
         <meta charset="UTF-8">
         <style>
-           
+            *{
+                margin: 0;
+                padding: 0;
+                font-size: 1.5rem;
+            }
+            html{
+                font-size: 62.5%;
+            }
+            :root{
+                --text-color: red;
+                }
+            th{
+                color: var(--text-color);
+            }
+            image{
+                width: 10%;
+                height: 10%;
+                font-size: 2rem;
+            }
+           li.lis{
+            color: yellowgreen;
+            text-decoration: underline;
+            font-size: 1.5rem;
+           }
+           .lis:hover{
+            color: brown;
+           }
+          #k.lis{
+            color: violet;
+            font-size: 1.5rem;
+          }
+           #chu{
+             color: rgb(22, 110, 103);
+             font-size: 4rem;
+            }
+            .so:active{
+                background-color: black;
+            }
+            .so{
+             color: hsl(0, 88%, 3%);
+             font-size: 15px;
+             background-color: rgb(236, 233, 233);
+             padding: 5px 5px;
+             border: 2px solid black;  
+            }
+            .so:hover{
+                background-color: cadetblue;
+            }
+            .box{
+                height: 35px;
+                width: 65px;
+                background-color: aquamarine;
+            }
+            .box::after{
+                content: "hộp đựng quà";
+                display: block;
+                color: rgb(219, 211, 226);
+                background-color: blueviolet;
+
+            }
+            .box::before{
+                content: "quà";
+                display: block;
+                color: rgb(43, 226, 104);
+                background-color: cornflowerblue;
+
+            }
+            h1::first-letter{
+                font-size: 30px;
+            }
+            p::selection{
+                background-color: rgb(22, 110, 103);
+            }
+            .hop1{
+                padding: 20px;
+            }
+            .hop2{
+                padding: 30px 30px;
+                border: 20px solid gray;
+            }
+            .dk{
+                padding-left: 930px;
+            }
         </style>
       
     </head>
     <!-- phần thân -->
     <body>
-        <h1 title="đây là thuộc tính">Đây là web của Ngô Xuân vinh</h1> 
-        <input type="text">
-        <button style="color: #050101f6;">đăng ký</button>
-        <button class="so"> đăng nhập</button>
+        <h1 id="chu" title="đây là thuộc tính">Đây là web của Ngô Xuân vinh</h1> 
+        
+        <div class="dk">  
+            <input class="so" type="text">      
+            <button class="so">Đăng ký</button>
+            <button class="so">Đăng nhập</button>
+        </div>
+
+        <div class="hop hop1">
+            <img src="https://scontent.fhan18-1.fna.fbcdn.net/v/t39.30808-6/308674176_3261186777488746_3020175125111291567_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=p7PmhUqZehsAX89SK0o&_nc_ht=scontent.fhan18-1.fna&oh=00_AfBj1KXs-c4SPgXDlgGg9RGOhAVYd6Blrm0N6hqpt6ik5g&oe=63A5B30C" alt=" ảnh sapa">
+        </div>
+
         <div>
           <h2>Phần đầu web xin được giới thiệu về 1 số vấn đề cần làm</h2>
-        <img src="https://scontent.fhan18-1.fna.fbcdn.net/v/t39.30808-6/308674176_3261186777488746_3020175125111291567_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=p7PmhUqZehsAX89SK0o&_nc_ht=scontent.fhan18-1.fna&oh=00_AfBj1KXs-c4SPgXDlgGg9RGOhAVYd6Blrm0N6hqpt6ik5g&oe=63A5B30C" alt=" ảnh sapa">
         <p> Đây là thông tin liên hệ <a href="https://www.facebook.com/vinhngo2000/">Nhấn vào Link</a></p>
         <p> Tiếp theo là 1 số vấn đề</p>
-        <ol>
-            <li id="chu">backend </li>
-            <li class="so">frontend</li>
-            <li> fullstack </li>
-        </ol>
+        
+        </div>
+
+        <div>
+            <table>
+                <thead>
+                    <th>số thứ tự</th>
+                    <th>họ và tên</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>cẩm yến</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>xuân vinh</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
         
-        <table>
-            <thead>
-                <th>stt</th>
-                <th>ten</th>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>cam yen</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>xuan vinh</td>
-                </tr>
-            </tbody>
-        </table>
+
+
+        <div class="hop hop2" >
+            <ol >
+            <li  class="lis" >backend </li>
+            <li class="lis">frontend</li>
+            <li id="k" class="lis"> fullstack </li>
+            </ol> 
+        </div>
+
+
+        <div class="box">
+
+        </div>
     </body>
 </html>
