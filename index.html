@@ -20,8 +20,7 @@
                 color: var(--text-color);
             }
             image{
-                width: 10%;
-                height: 10%;
+                margin: 10px;
                 font-size: 2rem;
             }
            li.lis{
@@ -54,9 +53,13 @@
                 background-color: cadetblue;
             }
             .box{
-                height: 35px;
-                width: 65px;
+                height: 200px;
+                width: 200px;
                 background-color: aquamarine;
+                padding: 10px;
+                border: 20px solid black;
+                margin: 100px;
+                box-sizing: border-box;
             }
             .box::after{
                 content: "hộp đựng quà";
@@ -88,11 +91,17 @@
             .dk{
                 padding-left: 930px;
             }
+            .header{
+                background-image: linear-gradient(0deg, rgba(243, 241, 227, 0.568), rgba(250, 240, 246, 0.548)),
+                url(https://scontent.fhan18-1.fna.fbcdn.net/v/t1.15752-9/319602651_2164203557113478_5314952879207585965_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=ae9488&_nc_ohc=gA6OECrcjmsAX-vWPeJ&_nc_ht=scontent.fhan18-1.fna&oh=03_AdR2V2o2tqcvl_H2N-I6U84RfxxGjbiaou3TljE5gXb3_g&oe=63C8C74E);
+                background-size: 450px;
+                background-repeat: repeat;
+            }
         </style>
       
     </head>
     <!-- phần thân -->
-    <body>
+    <body class="header">
         <h1 id="chu" title="đây là thuộc tính">Đây là web của Ngô Xuân vinh</h1> 
         
         <div class="dk">  
@@ -101,10 +110,10 @@
             <button class="so">Đăng nhập</button>
         </div>
 
-        <div class="hop hop1">
-            <img src="https://scontent.fhan18-1.fna.fbcdn.net/v/t39.30808-6/308674176_3261186777488746_3020175125111291567_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=p7PmhUqZehsAX89SK0o&_nc_ht=scontent.fhan18-1.fna&oh=00_AfBj1KXs-c4SPgXDlgGg9RGOhAVYd6Blrm0N6hqpt6ik5g&oe=63A5B30C" alt=" ảnh sapa">
+       <!--<div class="hop hop1">
+            <img src="https://scontent.fhan18-1.fna.fbcdn.net/v/t1.15752-9/317860226_825087528610422_6876310605441028603_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=ae9488&_nc_ohc=igNeiQPRq38AX9V8W8V&_nc_ht=scontent.fhan18-1.fna&oh=03_AdRpdZAfCEoFlabjVr1UjVHK7xBedJ4aQC16jhadYbq23g&oe=63C8D8B3" alt=" ảnh sapa">
         </div>
-
+--> 
         <div>
           <h2>Phần đầu web xin được giới thiệu về 1 số vấn đề cần làm</h2>
         <p> Đây là thông tin liên hệ <a href="https://www.facebook.com/vinhngo2000/">Nhấn vào Link</a></p>
@@ -143,7 +152,7 @@
 
 
         <div class="box">
-
+            viết vào
         </div>
     </body>
 </html>
